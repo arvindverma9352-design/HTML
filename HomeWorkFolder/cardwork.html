@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Design</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#d86b56,#9b4de2);
+}
+
+.container{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.top{
+    height:180px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:70px;
+    font-weight:bold;
+}
+
+.top::after{
+    content:"";
+    position:absolute;
+    bottom:-70px;
+    left:50%;
+    transform:translateX(-50%);
+    width:420px;
+    height:180px;
+    background:#fff;
+    border-radius:50%;
+}
+
+.yellow{
+    background:#e6a500;
+}
+
+.red{
+    background:#d63b4b;
+}
+
+.purple{
+    background:#6f3cd7;
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    padding:30px 25px;
+}
+
+.content p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn.yellow{
+    background:#e6a500;
+}
+
+.btn.red{
+    background:#d63b4b;
+}
+
+.btn.purple{
+    background:#6f3cd7;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <div class="top yellow">1</div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn yellow">Read More</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="top red">2</div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn red">Read More</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="top purple">3</div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn purple">Read More</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+.header{
+    height: 80px;
+    background-color: lightgreen;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+.content-section{
+    display: flex;
+    
+}
