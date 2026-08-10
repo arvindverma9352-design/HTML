@@ -1,0 +1,36 @@
+.A{
+    color: chartreuse;font-size: 100px; background-color: bisque;
+}
+#container{
+    border: 5px solid rgb(161, 118, 118);
+    width: 400px;
+    height: 200px;
+    padding: 50px;
+   /* margin-top: 250px;
+    margin-left: 500px;*/
+    margin: 350px;
+background-color: rgb(156, 98, 28);
+font-size: 20px;
+color: rgb(23, 10, 1);
+border-radius: 10px;
+background-image: url(../../bugatti.jpg);
+background-size: cover;
+box-shadow: 50px 50px 50px purple;
+}
+body{
+    background-color: rgb(9, 224, 134);
+}
+#z{
+    font-size: 50px;
+    color: rgb(237, 250, 4) ;
+    margin: 200px;
+    text-shadow: 50px 10px 5px rgb(16, 16, 16);
+
+}
+#box{
+     border: 5px solid;
+     width: 400px;
+    height: 200px;
+    margin: 350px;
+    overflow: auto;
+}
